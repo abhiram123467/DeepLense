@@ -1,0 +1,18 @@
+# configs/transformer_sim.yaml
+experiment_name: "agentic_transformer_v1"
+
+model:
+  architecture: "VisionTransformer"
+  patch_size: 16
+  hidden_dim: 256
+
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  epochs: 50
+  optimizer: "AdamW"
+  seed: 42
+
+data:
+  dataset_path: "./data/lensing_simulations/"
+  num_workers: 4
